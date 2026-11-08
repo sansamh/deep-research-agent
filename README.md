@@ -2,7 +2,7 @@
 
 Give it a topic. The agent **plans sub-questions, searches the web, reads pages, and writes a cited research report** — autonomously, with its full tool-use trace streamed live to the browser.
 
-Live demo: *coming soon*
+Live demo: **[deepprobe.pages.dev](https://deepprobe.pages.dev)** (frontend on Cloudflare Pages, backend on Render free tier — first request after idle takes ~1 min to wake up)
 
 ![Java](https://img.shields.io/badge/Java-21-orange) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5-brightgreen) ![Spring AI](https://img.shields.io/badge/Spring%20AI-1.0-green) ![React](https://img.shields.io/badge/React-18-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
@@ -76,7 +76,7 @@ npm run dev        # http://localhost:5175, proxies /api to :8081
 
 ## Deployment
 
-- **Backend** → Render / Railway (multi-stage `backend/Dockerfile`), PostgreSQL (Neon free tier works)
-- **Frontend** → Cloudflare Pages with a small worker proxying `/api/*` to the backend
+- **Backend** → Render free tier (root `Dockerfile`), PostgreSQL on **Neon** free tier
+- **Frontend** → Cloudflare Pages with a small `_worker.js` proxying `/api/*` to the backend
 
 Environment variables (backend): `OPENAI_API_KEY`, `OPENAI_BASE_URL`, `LLM_MODEL`, `TAVILY_API_KEY`, `SPRING_PROFILES_ACTIVE=prod`, `JDBC_DATABASE_URL`, `CORS_ALLOWED_ORIGINS`.
