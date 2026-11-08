@@ -4,3 +4,4 @@ backend/target/
 frontend/node_modules/
 frontend/dist/
 .env
+env-run.yaml
