@@ -1,4 +1,4 @@
-const BACKEND = 'https://deepprobe.onrender.com'
+const BACKEND = 'https://deepprobe-65634205430.us-central1.run.app'
 
 export default {
   async fetch(request, env) {

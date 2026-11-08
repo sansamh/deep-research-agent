@@ -1,0 +1,7 @@
+SPRING_PROFILES_ACTIVE: "prod"
+JDBC_DATABASE_URL: "jdbc:postgresql://ep-purple-wind-benwvc5m-pooler.c-9.us-east-2.aws.neon.tech/neondb?user=neondb_owner&password=npg_79bzXQBSoOpj&sslmode=require"
+OPENAI_API_KEY: "sk-wxldfmyeiewwpihdxjjxonsozlyzhkeslfmllzjtdjhtofbt"
+OPENAI_BASE_URL: "https://api.siliconflow.cn"
+LLM_MODEL: "Qwen/Qwen2.5-7B-Instruct"
+TAVILY_API_KEY: "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"
+CORS_ALLOWED_ORIGINS: "https://deepprobe.pages.dev"
